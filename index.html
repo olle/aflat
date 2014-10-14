@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Almost Flat</title>
+  <link href='http://fonts.googleapis.com/css?family=Exo+2:100,200' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="aflat">
+  <header>
+    <div class="container">
+      <h1>Almost Flat Button <small class="mini">v0.1</small></h1>
+      <p>
+        In a world of ever increasing flattness and dissapearing affordance,
+        this is a golden middle-way.</p>
+      <p>
+        An edge. Subtle border. Slightly elevated. Reacts on hover. And, oh so,
+        almost flat. Say hello to the <code>aflat--button</code> class.</p>
+    </div>
+  </header>
+  <section>
+    <article class="container">
+      <h2>Huge, not flat!</h2>
+      <p>
+        This is probably more than you can take. But we have it! Rembember,
+        going with <code>huge</code> is not for everyone.</p>
+      <div class="example">
+        <button class="aflat--button huge">Huge</button>
+      </div>
+    </article>
+
+    <article class="container">
+      <h2>Many sizes, but just barely flat</h2>
+      <p>
+        You can't go wrong with almost flat. We know that no one-size fits all.
+        You can have <code>small</code>, or <code>medium</code>, or even
+        <code>large</code>. Whatever suites you.</p>
+      <div class="example">
+        <button class="aflat--button small">Small</button>
+        <button class="aflat--button medium">Medium</button>
+        <button class="aflat--button large">Large</button>
+      </div>
+    </article>
+
+    <article class="container">
+      <h2>Don't be so passive</h2>
+      <p>
+        Almost flat is good. But did you know that you can spice up your buttons
+        with the <code>is-active</code> state? Just make sure to pick one of the
+        hot color themes: <code>aflat--minty</code>, <code>aflat--juicy</code>
+        or <code>aflat--bloody</code>.
+      <div class="example">
+        <button class="aflat--button aflat--minty is-active">Minty</button>
+        <button class="aflat--button aflat--juicy is-active">Juicy</button>
+        <button class="aflat--button aflat--bloody is-active">Bloody</button>
+      </div>
+    </article>
+
+    <article class="container">
+      <h2>Normal, pressed and hover</h2>
+      <p>
+        In a pressing state, but staying almost flat. We can vouche for that!
+        And hovering above the flatness.</p>
+      <div class="example">
+        <button class="aflat--button aflat--button">Normal</button>
+        <button class="aflat--button aflat--button is-hovering">Hover</button>
+        <button class="aflat--button aflat--button is-pressed">Pressed</button>
+      </div>
+    </article>
+
+  </section>
+  <footer>
+    <div class="container is-centered">
+      <small>Brought to you by <a href="studiomediatech.com">studiomediatech.com</a> &copy; <span id="year">year</span></small>
+    </div>
+  </footer>
+  <script>
+    (function (el) {
+      el.innerHTML = 1900 + new Date().getYear();
+    })(document.getElementById('year') || {});
+  </script>
+</body>
+
+</html>
