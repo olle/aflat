@@ -97,6 +97,7 @@ a {
 }
 .aflat--button:active,
 .aflat--button.is-pressed {
+  text-shadow: 0px -1px 0px #666;
   position: relative;
   top: 1px;
   padding-bottom: .46em;
